@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from '../navigation';
 
-const Container = styled.div`
+const Container = styled.header`
   background-color: lightBlue;
   height: 100vh;
+`;
+const H1 = styled.h1`
+  margin: unset;
 `;
 
 const AboutUs = () => {
@@ -12,7 +15,7 @@ const AboutUs = () => {
     <>
       <Nav />
       <Container>
-        <h1>About us</h1>
+        <H1>About us</H1>
       </Container>
     </>
   );

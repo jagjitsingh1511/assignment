@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 import { useHistory } from 'react-router-dom';
 
 const Wrapper = styled.nav`
-  position: fixed;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
@@ -70,7 +70,15 @@ const Navigation = () => {
               <Li> Section 4</Li>
             </CustomUl>
           </Li>
-          <Li onClick={() => routeTo('about')}>ABOUT US</Li>
+          <Li onClick={() => routeTo('about')}>
+            ABOUT US
+            <CustomUl>
+              <Li> About 1</Li>
+              <Li> About 2</Li>
+              <Li> About 3</Li>
+              <Li> About 4</Li>
+            </CustomUl>
+          </Li>
         </Ul>
       </Wrapper>
     </>

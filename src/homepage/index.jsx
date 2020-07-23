@@ -9,6 +9,9 @@ const Container = styled.div`
   background-color: lightBlue;
   height: 100vh;
 `;
+const H1 = styled.h1`
+  margin: unset;
+`;
 
 const LandingPage = () => {
   const profileData = useTypedSelector((state) => state.homeReducer);
@@ -43,7 +46,7 @@ const LandingPage = () => {
     <>
       <Nav />
       <Container>
-        <h1>Homepage</h1>
+        <header>Homepage</header>
       </Container>
     </>
   );
